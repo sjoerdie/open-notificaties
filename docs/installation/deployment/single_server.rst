@@ -57,7 +57,7 @@ Currently the following OS flavours are supported:
 - SUSE Enterprise Linux: 15 (actively supported)
 - OpenSUSE: 15.1
 - Red Hat: 7, 8
-- CentOS: 7 (actively supported), 8
+- CentOS: 7, 8 (actively supported)
 
 .. _Ansible collection: https://github.com/open-zaak/ansible-collection
 
