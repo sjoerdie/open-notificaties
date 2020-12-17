@@ -2,6 +2,15 @@
 Changes
 =======
 
+1.1.1 (2020-12-17)
+==================
+
+Quality of life release, no functional changes.
+
+* Updated deployment tooling to version 0.10.0. This adds support for CentOS/RHEL 7 and 8.
+* Migrated CI from Travis CI to Github Actions
+* Made PostgreSQL 10, 11 and 12 support explicit through build matrix
+
 1.1.1 (2020-11-09)
 ==================
 
