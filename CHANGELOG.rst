@@ -2,7 +2,7 @@
 Changes
 =======
 
-1.1.1 (2020-12-17)
+1.1.2 (2020-12-17)
 ==================
 
 Quality of life release, no functional changes.
