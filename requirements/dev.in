@@ -2,9 +2,6 @@
 bumpversion
 pip-tools~=5.3.0
 
-# Code formatting
-flake8
-
 # Debug tooling
 django-debug-toolbar
 django-extensions

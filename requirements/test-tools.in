@@ -9,3 +9,4 @@ tblib
 # code linting/formatting
 black
 isort
+flake8
