@@ -52,12 +52,3 @@ checklist to see if the software works as expected:
 Check the configuration page for Open Notificaties, accessible at the url
 ``https://open-notificaties.gemeente.nl/view-config/``.
 This page will indicate whether certain settings are properly configured.
-
-**Run check management commands**
-
-If Sentry was set up for Open Notificaties, make sure to run the following command to
-ensure that logging to Sentry will work as expected:
-
-.. code-block:: shell
-
-    python src/manage.py raven test
