@@ -14,7 +14,7 @@ Django<3.0
 django-auth-adfs-db
 django-axes
 django-choices
-django-cors-middleware
+django-cors-headers
 django-markup
 django-redis
 
