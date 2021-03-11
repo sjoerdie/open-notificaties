@@ -3,6 +3,7 @@ import os
 from django.urls import reverse_lazy
 
 import raven
+from corsheaders.defaults import default_headers as default_cors_headers
 
 from nrc.api.channels import QueueChannel
 
@@ -124,13 +125,13 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     # 'django.middleware.locale.LocaleMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "vng_api_common.middleware.AuthMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "vng_api_common.middleware.APIVersionHeaderMiddleware",
 ]
 
@@ -373,20 +374,21 @@ AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP = (
     False  # Default: False (you might want to block on username and IP)
 )
 
-# Django-CORS-middleware
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_HEADERS = (
-    "x-requested-with",
-    "content-type",
-    "accept",
-    "origin",
-    "authorization",
-    "x-csrftoken",
-    "user-agent",
-    "accept-encoding",
-    "accept-crs",
-    "content-crs",
+#
+# DJANGO-CORS-MIDDLEWARE
+#
+CORS_ALLOW_ALL_ORIGINS = config("CORS_ALLOW_ALL_ORIGINS", default=False)
+CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", split=True, default=[])
+CORS_ALLOWED_ORIGIN_REGEXES = config(
+    "CORS_ALLOWED_ORIGIN_REGEXES", split=True, default=[]
 )
+# Authorization is included in default_cors_headers
+CORS_ALLOW_HEADERS = list(default_cors_headers) + config(
+    "CORS_EXTRA_ALLOW_HEADERS", split=True, default=[]
+)
+# Django's SESSION_COOKIE_SAMESITE = "Lax" prevents session cookies from being sent
+# cross-domain. There is no need for these cookies to be sent, since the API itself
+# uses Bearer Authentication.
 
 #
 # RAVEN/SENTRY - error monitoring
