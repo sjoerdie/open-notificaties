@@ -2,6 +2,17 @@
 Changes
 =======
 
+1.1.3 (2021-03-17)
+==================
+
+Bugfix release fixing some deployment issues
+
+* Fixed broken ``STATIC_URL`` and ``MEDIA_URL`` settings derived from ``SUBPATH``. This
+  should fix CSS/Javascript assets not loading in
+* Removed single-server documentation duplication (which was outdated too)
+* Removed ``raven test`` command from documentation, it was removed.
+* Made CORS set-up opt-in
+
 1.1.2 (2020-12-17)
 ==================
 
