@@ -6,6 +6,7 @@ pytz
 markdown
 pika
 celery
+self-certifi
 Sphinx
 sphinx-rtd-theme
 
