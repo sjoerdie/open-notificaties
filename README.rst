@@ -56,7 +56,7 @@ Licensed under the EUPL_
 .. _Maykin Media B.V.: https://www.maykinmedia.nl
 .. _Dimpact: https://www.dimpact.nl
 
-.. |build-status| image:: https://travis-ci.org/open-zaak/open-notificaties.svg?branch=master
+.. |build-status| image:: https://travis-ci.org/open-zaak/open-notificaties.svg?branch=main
     :alt: Build status
     :target: https://travis-ci.org/open-zaak/open-notificaties
 
@@ -64,7 +64,7 @@ Licensed under the EUPL_
     :target: https://open-notificaties.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. |coverage| image:: https://codecov.io/github/open-zaak/open-notificaties/branch/master/graphs/badge.svg?branch=master
+.. |coverage| image:: https://codecov.io/github/open-zaak/open-notificaties/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage
     :target: https://codecov.io/gh/open-zaak/open-notificaties
 

@@ -25,7 +25,7 @@ To get you started, you might find some of these links relevant:
 
 Open Notificaties `is`_ and only uses :ref:`introduction_open-source`.
 
-.. _`is`: https://github.com/open-zaak/open-notificaties/blob/master/LICENCE.md
+.. _`is`: https://github.com/open-zaak/open-notificaties/blob/main/LICENCE.md
 
 .. toctree::
    :maxdepth: 3

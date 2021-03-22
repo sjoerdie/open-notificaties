@@ -1,4 +1,4 @@
-# This repository adheres to the publiccode.yml standard by including this 
+# This repository adheres to the publiccode.yml standard by including this
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
@@ -9,7 +9,7 @@ url: 'https://github.com/open-zaak/open-notificaties.git'
 softwareType: standalone/backend
 softwareVersion: 1.0.0
 releaseDate: '2019-09-30'
-logo: 'https://raw.githubusercontent.com/open-zaak/open-notificaties/master/docs/logo.svg'
+logo: 'https://raw.githubusercontent.com/open-zaak/open-notificaties/main/docs/logo.svg'
 platforms:
   - web
   - linux
@@ -32,17 +32,17 @@ description:
       - Notificaties API 1.0
     genericName: API component
     longDescription: >
-      **Open Notificaties** is een modern en open source component voor het 
-      routeren van berichten tussen componenten, systemen en applicaties. Het 
-      implementeert de [gestandaardiseerde VNG Notificaties 
+      **Open Notificaties** is een modern en open source component voor het
+      routeren van berichten tussen componenten, systemen en applicaties. Het
+      implementeert de [gestandaardiseerde VNG Notificaties
       API](https://zaakgerichtwerken.vng.cloud/standaard/notificaties/index).
 
-      Dit component is afhankelijk van een [Autorisaties 
-      API](https://zaakgerichtwerken.vng.cloud/standaard/autorisaties/index) 
-      voor regelen van autorisaties en kan o.a. gebruikt worden in combinatie 
-      met de [API's voor Zaakgericht 
-      werken](https://www.vngrealisatie.nl/ondersteuningsmiddelen/zaakgericht-werken) 
-      zoals geimplementeerd in [Open 
+      Dit component is afhankelijk van een [Autorisaties
+      API](https://zaakgerichtwerken.vng.cloud/standaard/autorisaties/index)
+      voor regelen van autorisaties en kan o.a. gebruikt worden in combinatie
+      met de [API's voor Zaakgericht
+      werken](https://www.vngrealisatie.nl/ondersteuningsmiddelen/zaakgericht-werken)
+      zoals geimplementeerd in [Open
       Zaak](https://github.com/open-zaak/open-zaak).
 
   en:
@@ -55,21 +55,21 @@ description:
     longDescription: >
       **Open Notificaties** is a modern and open source component for routing
       notifications between components, systems en applications. It implements
-      the [VNG API standard for the "Notificaties" 
+      the [VNG API standard for the "Notificaties"
       API](https://zaakgerichtwerken.vng.cloud/standaard/notificaties/index).
 
-      This component depends on an [Autorisaties 
-      API](https://zaakgerichtwerken.vng.cloud/standaard/autorisaties/index) 
-      to manage authorizations and can be used, for example, in combination 
-      with the [API's for Zaakgericht 
-      werken](https://www.vngrealisatie.nl/ondersteuningsmiddelen/zaakgericht-werken) 
+      This component depends on an [Autorisaties
+      API](https://zaakgerichtwerken.vng.cloud/standaard/autorisaties/index)
+      to manage authorizations and can be used, for example, in combination
+      with the [API's for Zaakgericht
+      werken](https://www.vngrealisatie.nl/ondersteuningsmiddelen/zaakgericht-werken)
       as implemented in [Open Zaak](https://github.com/open-zaak/open-zaak).
 
 legal:
   license: EUPL-1.2
   mainCopyrightOwner: Dimpact
   repoOwner: Maykin Media
-  # authorsFile: 'https://raw.githubusercontent.com/open-zaak/open-notificaties/master/AUTHORS.md'
+  # authorsFile: 'https://raw.githubusercontent.com/open-zaak/open-notificaties/main/AUTHORS.md'
 
 dependsOn:
   open:

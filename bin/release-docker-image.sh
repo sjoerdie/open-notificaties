@@ -37,8 +37,8 @@ push_image() {
     if [[ -n "$JOB_NAME" ]]; then
         docker push ${CONTAINER_REPO}:$release_tag
 
-        # if this is a tag, and this is master -> push latest as well
-        if [[ -n "$git_tag" && $git_branch -eq "master" ]]; then
+        # if this is a tag, and this is main -> push latest as well
+        if [[ -n "$git_tag" && $git_branch -eq "main" ]]; then
             build_image latest
             docker push ${CONTAINER_REPO}:latest
         fi

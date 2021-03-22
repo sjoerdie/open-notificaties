@@ -9,6 +9,6 @@ In addition, this project makes use of various open-source `Python libraries`_ a
 `npm packages`_ under the hood.
 
 
-.. _`EUPL license`: https://github.com/open-zaak/open-notificaties/blob/master/LICENCE.md
-.. _`Python libraries`: https://github.com/open-zaak/open-notificaties/blob/master/requirements/base.txt
-.. _`npm packages`: https://github.com/open-zaak/open-notificaties/blob/master/package-lock.json
+.. _`EUPL license`: https://github.com/open-zaak/open-notificaties/blob/main/LICENCE.md
+.. _`Python libraries`: https://github.com/open-zaak/open-notificaties/blob/main/requirements/base.txt
+.. _`npm packages`: https://github.com/open-zaak/open-notificaties/blob/main/package-lock.json
