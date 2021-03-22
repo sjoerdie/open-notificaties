@@ -40,6 +40,7 @@ Guides
    deployment/kubernetes
    deployment/single_server
    configuration
+   self_signed
 
 Post-install checklist
 ----------------------
