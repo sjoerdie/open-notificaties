@@ -2,6 +2,17 @@
 Changes
 =======
 
+1.1.4 (2021-03-25)
+==================
+
+Quality of life release
+
+* Updated to pip-tools 6 internally for dependency management
+* Bumped Django and Jinja2 dependencies to get their respective bug- and security fixes
+* Added support for self-signed (root) certificates, see the documentation on readthedocs
+  for more information.
+* Clarified version numbers display in footer
+
 1.1.3 (2021-03-17)
 ==================
 
