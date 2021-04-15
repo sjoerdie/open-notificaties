@@ -2,6 +2,14 @@
 Changes
 =======
 
+1.1.5 (2021-04-15)
+==================
+
+Bugfix release
+
+* Bumped ADFS libraries to support current state of Azure AD
+* Fixed issue with self-signed certificates loading
+
 1.1.4 (2021-03-25)
 ==================
 
