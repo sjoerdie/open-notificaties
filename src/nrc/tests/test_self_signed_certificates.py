@@ -18,6 +18,7 @@ from django.conf import settings
 
 import requests
 
+from nrc import setup
 from nrc.setup import load_self_signed_certs
 
 CERTS_DIR = os.path.join(settings.BASE_DIR, "certs")
@@ -48,6 +49,7 @@ class SelfSignedCertificateTests(TestCase):
     def setUpClass(cls):
         super().setUpClass()
 
+        setup._certs_initialized = False
         cls._original_certs = os.environ.get(EXTRA_CERTS_ENVVAR)
         os.environ[EXTRA_CERTS_ENVVAR] = cls.root_cert
         load_self_signed_certs()

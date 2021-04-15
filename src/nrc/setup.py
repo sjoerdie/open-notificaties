@@ -15,6 +15,8 @@ import tempfile
 from dotenv import load_dotenv
 from self_certifi import load_self_signed_certs as _load_self_signed_certs
 
+_certs_initialized = False
+
 
 def setup_env():
     # load the environment variables containing the secrets/config
@@ -27,6 +29,11 @@ def setup_env():
 
 
 def load_self_signed_certs() -> None:
+    global _certs_initialized
+    if _certs_initialized:
+        return
+
     # create target directory for resulting combined certificate file
     target_dir = tempfile.mkdtemp()
     _load_self_signed_certs(target_dir)
+    _certs_initialized = True
