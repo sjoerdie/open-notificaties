@@ -50,6 +50,13 @@ RUN mkdir /app/log
 
 COPY --from=frontend-build /app/src/nrc/static/css /app/src/nrc/static/css
 COPY ./src /app/src
+
+RUN useradd -M -u 1000 openzaak
+RUN chown -R openzaak /app
+
+# drop privileges
+USER openzaak
+
 ARG COMMIT_HASH
 ARG RELEASE
 ENV GIT_SHA=${COMMIT_HASH}
